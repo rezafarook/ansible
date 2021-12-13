@@ -1,0 +1,9 @@
+---
+
+ - name: Removing /var/tmp/MRF
+   hosts: rhel
+
+   tasks:
+   - name: Removing MRF directory
+     path: /var/tmp/MRF
+     state: absent

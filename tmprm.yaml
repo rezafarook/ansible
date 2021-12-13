@@ -1,0 +1,11 @@
+---
+
+ - name : remove /etc/REZA
+   hosts: control
+   become: true
+
+   tasks:
+   - name: removingfile
+     file:
+       path: /etc/REZA
+       state: absent

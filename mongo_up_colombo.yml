@@ -1,0 +1,10 @@
+# mongo_down_colombo.yml
+
+---
+
+ - name: Starting up mongodb
+   hosts: rhel
+
+   tasks:
+   - name: Starting up mongo on colombo
+     action: service name=mongod state=started enabled=yes 

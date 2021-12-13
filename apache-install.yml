@@ -1,0 +1,8 @@
+---
+
+  - hosts: rhel
+    tasks: 
+
+     - name: install httpd
+       become: true
+       yum: name=httpd state=present

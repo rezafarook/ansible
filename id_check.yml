@@ -1,0 +1,10 @@
+# id_check.yml
+
+---
+
+ - name: Check ID on a host
+   hosts: colombo
+
+   tasks:
+   - name: Checking id reza on PI hosts
+     command: id -a reza

@@ -1,0 +1,11 @@
+---
+
+ - name: "Remove the temporary file"
+   hosts: rhel
+   become: True
+
+   tasks:
+   - name: "Remove the unwanted file"
+     file:
+       dest: /var/tmp/MRF
+       state: absent
